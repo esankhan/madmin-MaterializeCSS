@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Madamin Page</title>
+  </head>
+  <body class="grey lighten-4">
+  <!--Navigation-->
+  <nav class="blue darken-2">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo">MadAdmin</a>
+        <a
+          href=""
+          data-activates="side-nav"
+          class="button-collapse show-on-large right"
+        >
+          <i class="material-icons">menu</i></a
+        >
+        <ul class="right hide-on-med-and-down">
+          <li class="active"><a href="index.html">Dashboard</a></li>
+          <li><a href="posts.html">Posts</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="comments.html">Comments</a></li>
+          <li><a href="users.html">Users</a></li>
+        </ul>
+        <!--Side-nave-->
+        <ul id="side-nav" class="side-nav">
+          <li>
+            <div class="user-view">
+              <div class="background">
+                <img src="img/ocean.jpg" alt="" />
+              </div>
+              <a href="">
+                <img src="img/person1.jpg" alt="" class="circle" />
+              </a>
+
+              <a href="">
+                <span class="name white-text">John Cena</span>
+              </a>
+              <a href="">
+                <span class="email white-text">john@gmail.com</span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <a href="index.html">
+              <i class="material-icons">dashboard</i>
+              Dashboard</a
+            >
+          </li>
+          <li><a href="posts.html">Posts</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="comments.html">Comments</a></li>
+          <li><a href="users.html">Users</a></li>
+          <li>
+            <div href="" class="divider">
+
+            </div>
+
+            </a>
+          </li>
+          <li>
+            <a href="" class="subheader">Account Controls</a>
+          </li>
+          <li>
+            <a href="login.html" class="waves-effect">Logout</a>
+          </li>
+        </ul>
+        <!--Side-nave-->
+      </div>
+    </div>
+  </nav>
+  <!--Stats-->
+  <section class="section section-stats center">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6 l3">
+          <div class="card-panel center blue lighten-1 white-text ">
+              <i class="material-icons">insert_emoticons</i>
+            <h6>Monthly Visitors</h6>
+            <h3 class="count">28475</h3>
+            <div class="progress grey lighten-1">
+              <div class="determinate white" style="width:44%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l3">
+            <div class="card-panel  center">
+                <i class="material-icons ">mode_edit</i>
+              <h6>Blog Posts</h6>
+              <h3 class="count">105</h3>
+              <div class="progress grey lighten-1">
+                <div class="determinate blue lighten-1" style="width:24%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l3">
+              <div class="card-panel blue lighten-1 white-text center">
+                  <i class="material-icons ">mode_comments</i>
+                <h6>Comments</h6>
+                <h3 class="count">1200</h3>
+                <div class="progress grey lighten-1">
+                  <div class="determinate white" style="width:14%;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card-panel center">
+                    <i class="material-icons ">supervisor_account</i>
+                  <h6>Users</h6>
+                  <h3 class="count">350</h3>
+                  <div class="progress grey lighten-1">
+                    <div class="determinate blue lighten-1" style="width:14%;"></div>
+                  </div>
+                </div>
+              </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--visitors-->
+  <section class="section section-visitor blue lighten-4">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6 l8">
+          <div class="card-panel">
+              <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+          </div>
+        </div>
+        <!--Commnets-->
+        <div class="col s12 m6 l4">
+          <ul class="collection with-header latest-comments">
+            <li class="collection-header">
+              <h5>Latest Comments</h5>
+            </li>
+            <li class="collection-item avatar">
+              <img src="img/person1.jpg" alt="" class="circle">
+              <span class="title">John Cena</span>
+              <p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus iste aperiam velit cum dolore nisi atque nobis sed cupiditate. Quas beatae atque ullam quia similique excepturi odio labore eveniet quis.</p>
+              <a href="#" class="approve green-text">Approve</a> |
+              <a href="#" class="deny red-text">Deny</a>
+            </li>
+            <li class="collection-item avatar">
+                <img src="img/person3.jpg" alt="" class="circle">
+                <span class="title">Maria J</span>
+                <p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus iste aperiam velit cum dolore nisi atque nobis sed cupiditate. Quas beatae atque ullam quia similique excepturi odio labore eveniet quis.</p>
+                <a href="#" class="approve green-text">Approve</a> |
+                <a href="#" class="deny red-text">Deny</a>
+              </li>
+              <li class="collection-item avatar">
+                  <img src="img/person2.jpg" alt="" class="circle">
+                  <span class="title">Sophia S</span>
+                  <p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus iste aperiam velit cum dolore nisi atque nobis sed cupiditate. Quas beatae atque ullam quia similique excepturi odio labore eveniet quis.</p>
+                  <a href="#" class="approve green-text">Approve</a> |
+                  <a href="#" class="deny red-text">Deny</a>
+                </li>
+          </ul>
+        </div>
+        <!--Commnets-->
+      </div>
+    </div>
+  </section>
+  <!--visitors-->
+
+  <!--Recent Posts and To dos-->
+  <section class="section section-recent">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 l8 m6">
+          <div class="card">
+          <div class="card-content">
+            <span class="card-title">Recent Posts</span>
+            <table class="striped">
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Category</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Post One</td>
+                  <td>Web Development</td>
+                  <td><a href="details.html" class="btn blue lighten-2">Details</a></td>
+                </tr>
+                <tr>
+                    <td>Post Two</td>
+                    <td>Graphic Design</td>
+                    <td><a href="details.html" class="btn blue lighten-2">Details</a></td>
+                  </tr>
+                  <tr>
+                      <td>Post Three</td>
+                      <td>Web Development</td>
+                      <td><a href="details.html" class="btn blue lighten-2">Details</a></td>
+                    </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">Quick Tools</span>
+            <form id="todo-form">
+                <div class="input-field">
+                  <input type="text" id="todo" placeholder="Add Todo...">
+                </div>
+            </form>
+            <ul class="collection todos">
+              <li class="collection-item">
+                <div>Todo One
+                   <a href="#" class="secondary-content delete">
+                  <i class="material-icons">close</i>
+                </a></div>
+              </li>
+              <li class="collection-item">
+                  <div>Todo Two
+                     <a href="#" class="secondary-content delete">
+                    <i class="material-icons">close</i>
+                  </a></div>
+                </li>
+                <li class="collection-item">
+                    <div>Todo Three
+                       <a href="#" class="secondary-content delete">
+                      <i class="material-icons">close</i>
+                    </a></div>
+                  </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <!--Recent Posts and To dos-->
+  <!--Footer-->
+  <footer class="section blue darken-2 white-text center">
+    <p>MadAdmin Panel Copyright &copy; 2019</p>
+  </footer>
+  <!--Footer-->
+
+  <!--Fixed Action button-->
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large red">
+      <i class="material-icons">add</i>
+    </a>
+    <ul>
+      <li>
+        <a href="#post-modal" class="btn-floating modal-trigger blue">
+          <i class="material-icons">edit</i>
+        </a>
+      </li>
+      <li>
+          <a href="#category-modal" class="btn-floating modal-trigger blue">
+            <i class="material-icons">folder</i>
+          </a>
+        </li>
+        <li>
+            <a href="#user-modal" class="btn-floating modal-trigger blue">
+              <i class="material-icons">supervisor_account</i>
+            </a>
+          </li>
+    </ul>
+  </div>
+  <!--Fixed Action button-->
+
+  <!--Add Post Modal-->
+  <div id="post-modal" class="modal">
+    <div class="modal-content">
+      <h4>Add Post</h4>
+      <form >
+        <div class="input-field">
+          <input type="text" id="title">
+          <label for="title">Title</label>
+        </div>
+        <div class="input-field">
+          <select >
+            <option value="" disabled selected>Select Option</option>
+            <option value="1">Web Development</option>
+            <option value="2">Graphic Design</option>
+            <option value="3">Web Scrapping</option>
+            <option value="4">Other</option>
+          </select>
+          <label >Category</label>
+        </div>
+        <div class="input-field">
+          <textarea name="body" id="body" class="materialize-textarea">
+          </textarea>
+          <label for="body">Body</label>
+        </div>
+      </form>
+      <div class="modal-footer">
+        <a href="" class="modal-action modal-close btn blue white-text">
+          Submit
+        </a>
+      </div>
+    </div>
+  </div>
+  <!--Add Post Modal-->
+
+  <!--ADD Category Modal-->
+  <div id="category-modal" class="modal">
+      <div class="modal-content">
+        <h4>Add Category</h4>
+        <form >
+          <div class="input-field">
+            <input type="text" id="catTitle">
+            <label for="catTitle">Title</label>
+          </div>
+        </form>
+        <div class="modal-footer">
+          <a href="" class="modal-action modal-close btn blue white-text">
+            Submit
+          </a>
+        </div>
+      </div>
+    </div>   
+  <!--ADD Category Modal-->
+
+    <!--ADD User Modal-->
+    <div id="user-modal" class="modal">
+        <div class="modal-content">
+          <h4>Add User</h4>
+          <form >
+            <div class="input-field">
+              <input type="text" id="name">
+              <label for="name">Name</label>
+            </div>
+            <div class="input-field">
+                <input type="email" id="email">
+                <label for="email">Email</label>
+              </div>
+              <div class="input-field">
+                  <input type="password" id="password">
+                  <label for="password">Password</label>
+                </div>
+                <div class="input-field">
+                    <input type="password" id="password2">
+                    <label for="password2">Confirm assword</label>
+                  </div>
+          </form>
+          <div class="modal-footer">
+            <a href="" class="modal-action modal-close btn blue white-text">
+              Submit
+            </a>
+          </div>
+        </div>
+      </div>   
+
+      <!--ADD User Modal-->
+  <!--preloader-->
+  <div class="loader preloader-wrapper big active">
+      <div class="spinner-layer spinner-blue-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+  <!--preloader-->
+    <!--Stats-->
+  <!--Navigation end-->
+ 
+    <!--Import jQuery before materialize.js-->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script type="text/javascript" src="js/chart.js"></script>
+    <script src="https://cdn.ckeditor.com/4.12.1/standard/ckeditor.js"></script>
+    <script>
+      
+      $('.section').hide()
+      setTimeout(function() {
+        $(document).ready(function() {
+        // Custom JS & jQuery here
+        //show sections
+        $('.section').fadeIn();
+//hide preloader
+
+$('.loader').fadeOut();
+      
+        //init modal
+$('.modal').modal();
+
+//init select
+$('select').material_select();
+// init CKEDITOR
+CKEDITOR.replace( 'body' );
+
+  //init side nav
+        $(".button-collapse").sideNav();
+        //counter
+
+      $('.count').each(function(){
+        $(this).prop('Counter',0).animate({
+Counter:$(this).text()
+        },{
+          duration:1000,
+          easing:'swing',
+          step: function(now) {
+            $(this).text(Math.ceil(now))
+          }
+        });
+      });
+//commnets approove and deny
+
+$('.approve').click(function(e){
+Materialize.toast('Comment Approved',3000);
+e.preventDefault();
+});
+$('.deny').click(function(e){
+Materialize.toast('Comment Denied',3000);
+e.preventDefault();
+});
+
+
+//Quick TODos
+
+$('#todo-form').submit(function (e) {
+const output=`<li class="collection-item">
+                <div>${$('#todo').val()}
+                   <a href="#" class="secondary-content delete">
+                  <i class="material-icons">close</i>
+                </a></div>
+              </li>`;
+              $('.todos').append(output);
+              Materialize.toast('Todo Added', 2000);
+  e.preventDefault();
+});
+
+//delete Todos Using Event delegation
+$('.todos').on('click','.delete',function (e){
+    
+    $(this).parent().parent().remove();
+    Materialize.toast('Todo Removed', 2000);
+    e.preventDefault();
+
+});
+
+      });
+      },1000);
+      
+    </script>
+  </body>
+</html>
